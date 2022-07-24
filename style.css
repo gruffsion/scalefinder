@@ -1,0 +1,72 @@
+body {
+  background-color: rgba(191, 94, 59, 1);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: bold;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+h1 {
+  opacity: 80%;
+}
+
+ul {
+max-width: 100%;
+min-width: 100px;
+list-style: none;
+opacity: 80%;
+justify-content: center;
+}
+
+#piano {
+  display: inline-block;
+  background-color: black;
+  padding: 0;
+}
+
+.key {
+  float: left;
+  position: relative;
+
+}
+
+.white {
+  height: 18vw;
+  width: 6vw;
+  z-index: 1;
+  border-left: 0.12vw solid rgba(191, 94, 59, 1);
+  background-color: rgb(255, 255, 255);
+
+}
+
+.black {
+  height: 10vw;
+  width: 3vw;
+  z-index: 2;
+  border: 0.12vw solid rgba(191, 94, 59, 1);
+  background-color: #222222;
+
+}
+
+.a, .b, .d, .e, .g, .black {
+  margin: 0 0 0 -1.676190476vw;
+}
+
+#keyboard > .note:last-child {
+  border-right: 0.12vw solid #AAAAAA;
+}
+
+.scale {
+  background-color: rgba(242, 225, 140, 1);
+
+}
+
+#rootselect{
+  align-items: center; 
+  width: 40%;
+  margin: auto;
+  font-size: vh;
+  padding: 1vh;
+  border: rgba(191, 94, 59, 1);
+ }

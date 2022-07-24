@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cywair cywir</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1>cywair cywir</h1>
+
+ <div id = "pianodiv">     
+  <ul id="piano">
+    <li id="0", class="key white c" data-note="C3"></li>
+    <li id="1", class="key black c_sharp" data-note="C#3"></li>
+    <li id="2", class="key white d" data-note="D3"></li>
+    <li id="3", class="key black d_sharp" data-note="D#3"></li>
+    <li id="4", class="key white e" data-note="E3"></li>
+    <li id="5", class="key white f" data-note="F3"></li>
+    <li id="6", class="key black f_sharp" data-note="F#3"></li>
+    <li id="7", class="key white g" data-note="G3"></li>
+    <li id="8" class="key black g_sharp" data-note="G#3"></li>
+    <li id="9", class="key white a" data-note="A3"></li>
+    <li id="10", class="key black a_sharp" data-note="A#3"></li>
+    <li id="11", class="key white b" data-note="B3"></li>
+    <li id="12", class="key white c" data-note="C4"></li>
+    <li id="13", class="key black c_sharp" data-note="C#4"></li>
+    <li id="14", class="key white d" data-note="D4"></li>
+    <li id="15", class="key black d_sharp" data-note="D#4"></li>
+    <li id="16", class="key white e" data-note="E4"></li>
+    <li id="17", class="key white f" data-note="F4"></li>
+    <li id="18", class="key black f_sharp" data-note="F#4"></li>
+    <li id="19", class="key white g" data-note="G4"></li>
+    <li id="20", class="key black g_sharp" data-note="G#4"></li>
+    <li id="21", class="key white a" data-note="A4"></li>
+    <li id="22", class="key black a_sharp" data-note="A#4"></li>
+    <li id="23", class="key white b" data-note="B4"></li>
+  </ul>
+</div>
+   
+    <div id = "rootselect">
+        <select id="root_note", onchange=updateRoot()>
+        <option value="0">C</option>
+        <option value="1">C#</option>
+        <option value="2">D</option>
+        <option value="3">D#</option>
+        <option value="4">E</option>
+        <option value="5">F</option>
+        <option value="6">F#</option>
+        <option value="7">G</option>
+        <option value="8">G#</option>
+        <option value="9">A</option>
+        <option value="10">A#</option>
+        <option value="11">B</option>
+      </select>
+    
+        <select id="scale_select", onchange="updateScale()">
+              <option value=scaleMajor>Major</option>
+        <option value=scaleHarmonicMinor>Harmonic minor</option>
+        <option value=scalePhrygian>Phrygian</option>
+         <option value=scaleDorian>Dorian</option>
+         <option value=scaleLydian>Lydian</option>
+          <option value=scaleMelodicMinor>Melodic Minor</option>
+           <option value=scaleLocrian>Locrian</option>
+      </select>
+        </div>
+     
+      
+</body>
+<script src="script.js"></script>
+
+</html><body><body>
